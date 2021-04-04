@@ -3,6 +3,8 @@
 
 > EM DESENVOLVIMENTO :mechanic: 
 
+<br>
+
 ### :woman_technologist: Objetivo:
 O objetivo do projeto é construir um sistema de **folha de pagamento**. O sistema consiste do
 gerenciamento de pagamentos dos empregados de uma empresa. Além disso, o sistema deve
