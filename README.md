@@ -1,6 +1,10 @@
-# Projeto_De_Software
+# Projeto de Folha de Pagamento
+#
+#
+#
+> EM DESENVOLVIMENTO :mechanic: 
 
-### Objetivo:
+### :woman_technologist: Objetivo:
 O objetivo do projeto é construir um sistema de **folha de pagamento**. O sistema consiste do
 gerenciamento de pagamentos dos empregados de uma empresa. Além disso, o sistema deve
 gerenciar os dados destes empregados, a exemplo os cartões de pontos. Empregados devem receber
@@ -32,6 +36,6 @@ identificação no sistema de folha de pagamento.
 naquele dia. O sistema receberá a data até a qual o pagamento deve ser feito e calculará o
 pagamento para cada empregado desde a última vez em que este foi pago.
 
-### Mais especificações:
+### :squirrel: Mais especificações:
 
 [Clique aqui](https://github.com/eireneof/projeto_de_software/blob/main/Especifica%C3%A7%C3%B5es/Folha_de_Pagamento.pdf) para ver mais sobre o projeto.
