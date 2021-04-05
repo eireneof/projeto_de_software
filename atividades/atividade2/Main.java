@@ -1,3 +1,4 @@
+package atividades.atividade2;
 public class Main {
     public static void main(String[] args) {
         Empregado empregado1 = new Empregado("Eirene", "Maceió", 10.0);

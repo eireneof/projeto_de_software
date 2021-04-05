@@ -1,8 +1,9 @@
-public class Empregado {
+package atividades.atividade3;
 
-    String nome;
-    String endereco;
-    double cartaoDePonto;
+public class Empregado {
+    public String nome;
+    public String endereco;
+    public double cartaoDePonto;
 
     public Empregado(String nome, String endereco, double cartaoDePonto) {
         this.nome = nome; //this é o próprio objeto da classe
@@ -25,5 +26,4 @@ public class Empregado {
                 "\nEndereço: " + empregado.endereco + 
                 "\nCartão de Ponto: " + empregado.cartaoDePonto;
     }
-    
 }
