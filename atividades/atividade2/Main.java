@@ -1,10 +1,10 @@
 package atividades.atividade2;
 public class Main {
     public static void main(String[] args) {
-        Empregado empregado1 = new Empregado("Eirene", "Maceió", 10.0);
-        Empregado empregado2 = new Empregado("Adhemar", "Arapiraca", 13.10);
+        Empregado empregado1 = new Empregado();
+        Empregado empregado2 = new Empregado();
 
-        System.out.println(empregado1.printInformacoesEmpregado(empregado2));
+        //System.out.println(empregado1.printInformacoesEmpregado(empregado2));
     
     }
 }
