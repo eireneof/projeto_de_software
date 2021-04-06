@@ -1,9 +1,15 @@
 package src;
 
 public class WorkersUnion {
-    String employeeId;
+    private String employeeId;
 
     public WorkersUnion(String employeeId) {
         this.employeeId = employeeId;
+    }
+    public void setEmployeeId(String employeeId) {
+        this.employeeId = employeeId;
+    }
+    public String getEmployeeId() {
+        return employeeId;
     }
 }

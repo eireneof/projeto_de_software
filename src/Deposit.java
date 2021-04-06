@@ -1,17 +1,30 @@
 package src;
 
-public class Deposit {
-    double value;
-    String employeeName;
-    String bankNumber;
-    String agency;
-    String employeeId;
+import java.util.Set;
 
-    public Deposit(double value, String employeeName, String bankNumber, String agency, String employeeId) {
-        this.value = value;
-        this.employeeName = employeeName;
+public class Deposit extends PaymentMethods{
+    
+    private String bankNumber;
+    private String agency;
+
+    public void initDeposit(String bankNumber, String agency) {
         this.bankNumber = bankNumber;
         this.agency = agency;
-        this.employeeId = employeeId;
+    }
+
+    public void setAgency(String agency) {
+        this.agency = agency;
+    }
+
+    public void setBankNumber(String bankNumber) {
+        this.bankNumber = bankNumber;
+    }
+
+    public String getAgency() {
+        return agency;
+    }
+    
+    public String getBankNumber() {
+        return bankNumber;
     }
 }

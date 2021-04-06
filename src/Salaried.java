@@ -1,7 +1,7 @@
 package src;
 
-public class Salaried {
-    double salary;
+public class Salaried extends Employee {
+    private double salary;
     public Salaried (double salary) {
         this.salary = salary;
     }

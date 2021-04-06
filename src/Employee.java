@@ -1,12 +1,12 @@
 package src;
 
 public class Employee {
-   String name;
-   String adress;
-   String employeeId;
-   String paymentMethod;
+   private String name;
+   private String adress;
+   private String employeeId;
+   private String paymentMethod;
 
-    public Employee(String name, String adress, String employeeId, String paymentMethod) {
+    public void initEmployee(String name, String adress, String employeeId, String paymentMethod) {
         this.name = name;
         this.adress = adress;
         this.employeeId = employeeId;
@@ -26,6 +26,32 @@ public class Employee {
         } else {
             System.out.println("Invalid payment method!\n");
         }
+    }
+
+    public void setAdress(String adress) {
+        this.adress = adress;
+    }
+
+    public void setEmployeeId(String employeeId) {
+        this.employeeId = employeeId;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void setPaymentMethod(String paymentMethod) {
+        this.paymentMethod = paymentMethod;
+    }
+    public String getAdress() {
+        return adress;
+    }
+    public String getEmployeeId() {
+        return employeeId;
+    }
+    public String getName() {
+        return name;
+    }
+    public String getPaymentMethod() {
+        return paymentMethod;
     }
 
 }
