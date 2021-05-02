@@ -30,6 +30,7 @@ public class Main {
         do {
         	
         	comando = scanner.nextInt();
+        	int option;
         	Sindicate sindicate = new Sindicate();
             Employee employee = new Employee();
             switch(comando) {
@@ -59,11 +60,34 @@ public class Main {
                 	System.out.println("Esses dados são referentes a:");
                 	System.out.println("1 - Informações do empregado na EMPRESA");
                 	System.out.println("2 - Informações do empregado na SINDICATO");
-                	int option = scanner.nextInt();
+                	option = scanner.nextInt();
                 	if(option == 1)
                 		employee.employeeChange();
                 	else if(option == 2)
                 		sindicate.changeMember();
+                case 7:
+                	System.out.println("Rodar folha de pagamento para hoje!");
+                	break;
+                case 8:
+                	System.out.println("Undo/Redo!");
+                	System.out.println("Das ações de 1 - 7 qual será mudada?");
+                	option = scanner.nextInt();
+                	if(option == 1) {
+                		
+                	} else if(option == 2) {
+                		
+                	} else if(option == 3) {
+                		
+                	} else if(option == 4) {
+                		
+                	} else if(option == 5) {
+                		
+                	} else if(option == 6) {
+                		
+                	} else {
+                		System.out.println("Opção inválida!");
+                	}
+                	break;
             }
             
 
