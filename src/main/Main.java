@@ -4,8 +4,12 @@ import java.util.Scanner;
 import java.util.Random;
 import java.util.Stack;
 
+import java.util.List;
+import java.util.ArrayList;
+
 import employee.Employee;
 import employee.Sindicate;
+import historic.HistoricComands;
 
 public class Main {
     public static void main(String[] args){
@@ -26,30 +30,36 @@ public class Main {
         System.out.println("0 - Mostrar a lista de comandos");
         Scanner scanner = new Scanner(System.in);
         
-        int comando = 1;
+        HistoricComands comando = new HistoricComands();
+        
+        int commandVerify;
+        
         do {
+        	commandVerify = scanner.nextInt();
+        	if (commandVerify != 8 && commandVerify != 0 && commandVerify != 11)
+        		comando.setCurrent(commandVerify);
         	
-        	comando = scanner.nextInt();
+        	System.out.println("undo: " + comando.getCurrentUndos() + " | " + "current:" + comando.getCurrent() + " | " + "redo: " + comando.getCurrentRedos());
         	int option;
         	Sindicate sindicate = new Sindicate();
             Employee employee = new Employee();
-            switch(comando) {
+            switch(commandVerify) {
                 case 1:
                     System.out.println("Adição de um empregado");
-                    employee.add(); //okay
+                    //employee.add(); //okay
                     break;
                 case 2:
                 	System.out.println("Remoção de um empregado");
-                	employee.removeEmployee(); //okay
+                	//employee.removeEmployee(); //okay
                 	
                 	break;
                 case 3:
                 	System.out.println("Lançar um cartão de ponto");
-                	employee.postTimeCard();
+                	//employee.postTimeCard();
                 	break;
                 case 4:
                 	System.out.println("Lançar uma venda!");
-                	employee.postSale();
+                	//employee.postSale();
                 	break;
                 case 5:
                 	System.out.println("Lançar uma taxa de serviço!");
@@ -60,41 +70,38 @@ public class Main {
                 	System.out.println("Esses dados são referentes a:");
                 	System.out.println("1 - Informações do empregado na EMPRESA");
                 	System.out.println("2 - Informações do empregado na SINDICATO");
-                	option = scanner.nextInt();
+                	/* option = scanner.nextInt();
                 	if(option == 1)
                 		employee.employeeChange();
                 	else if(option == 2)
-                		sindicate.changeMember();
+                		sindicate.changeMember(); */
                 case 7:
                 	System.out.println("Rodar folha de pagamento para hoje!");
                 	break;
                 case 8:
                 	System.out.println("Undo/Redo!");
-                	System.out.println("Das ações de 1 - 7 qual será mudada?");
-                	/*option = scanner.nextInt();
+                	System.out.println("Informe o que deseja fazer: ");
+                	System.out.println("1 - Undo");
+                	System.out.println("2 - Redo");
+                	option = scanner.nextInt();
+                	int undoRedo;
                 	if(option == 1) {
-                		
+                		undoRedo = comando.undoCommand();
+                		//System.out.println("Depois do undo:");
+                		//System.out.println("undo: " + comando.getCurrentUndos() + " | " + "current:" + comando.getCurrent() + " | " + "redo: " + comando.getCurrentRedos());
                 	} else if(option == 2) {
-                		
-                	} else if(option == 3) {
-                		
-                	} else if(option == 4) {
-                		
-                	} else if(option == 5) {
-                		
-                	} else if(option == 6) {
-                		
+                		undoRedo = comando.redoCommand();
+                		//System.out.println("Depois do redo:");
+                		//System.out.println("undo: " + comando.getCurrentUndos() + " | " + "current:" + comando.getCurrent() + " | " + "redo: " + comando.getCurrentRedos());
                 	} else {
                 		System.out.println("Opção inválida!");
-                	} */
+                	} 
                 	break;
             }
             
 
             System.out.println("Informe um novo comando, digite 11 para sair ou 0 para mostrar a lista de comandos.");
-            //int newcomando = scanner.nextInt();
-            //comando = newcomando;
-        } while(comando != 11);
+        } while(commandVerify != 11);
         scanner.close();
         
         System.out.println("Você saiu do sistema. Até breve!");
