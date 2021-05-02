@@ -39,4 +39,4 @@ pagamento para cada empregado desde a última vez em que este foi pago.
 
 ### :monocle_face: Mais especificações:
 
-[Clique aqui](https://github.com/eireneof/projeto_de_software/blob/main/Especifica%C3%A7%C3%B5es/Folha_de_Pagamento.pdf) para ver mais sobre o projeto.
+[Clique aqui](https://github.com/eireneof/projeto_de_software/blob/main/Folha_de_Pagamento.pdf) para ver mais sobre o projeto.
