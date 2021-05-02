@@ -4,13 +4,15 @@ public class Sale {
 	private String date;
 	private double value;
 	private String item;
+	private int employeeId;
 	//public int id;
 	
 
-	public Sale(String date, double value, String item) {
+	public Sale(String date, double value, String item, int employeeId) {
 		this.setDate(date);
         this.setValue(value);
         this.setItem(item);
+        this.setEmployeeId(employeeId);
         //this.id = id;
 	}
 	
@@ -47,6 +49,14 @@ public class Sale {
 
 	public void setItem(String item) {
 		this.item = item;
+	}
+
+	public int getEmployeeId() {
+		return employeeId;
+	}
+
+	public void setEmployeeId(int employeeId) {
+		this.employeeId = employeeId;
 	}
 
 }

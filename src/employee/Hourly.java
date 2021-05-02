@@ -50,7 +50,9 @@ public class Hourly extends Employee {
     	double out = in.nextDouble();
     	
     	TimeCard timeCard = new TimeCard(inner, out, date);
-    	timeCards.add(timeCard);  
+    	timeCards.add(timeCard); 
+    	
+    	//System.out.println(timeCard.ge);
     	
     	//in.close();
     }

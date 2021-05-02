@@ -176,6 +176,7 @@ public class Employee {
         for(Employee employee : listEmployees){
             if(employee.getId() == id){
                 if(employee.getClass() == Hourly.class){
+                	//System.out.println("entrei aqui");
                     ((Hourly)employee).postTimeCard();
                 }
             }
@@ -191,7 +192,7 @@ public class Employee {
         for(Employee employee : listEmployees){
             if(employee.getId() == id){
                 if(employee.getClass() == Comissioned.class){
-                    ((Comissioned)employee).postSale();
+                    ((Comissioned)employee).postSale(employee.getId());
                 }
             }
         }
