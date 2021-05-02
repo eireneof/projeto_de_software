@@ -5,6 +5,7 @@ import java.util.Random;
 import java.util.Stack;
 
 import employee.Employee;
+import employee.Sindicate;
 
 public class Main {
     public static void main(String[] args){
@@ -23,23 +24,58 @@ public class Main {
         System.out.println("10 - Criação de novas agendas de pagamento");
         System.out.println("11 - Sair");
         System.out.println("0 - Mostrar a lista de comandos");
-
         Scanner scanner = new Scanner(System.in);
-        int comando = scanner.nextInt();
+        
+        int comando = 1;
         do {
+        	
+        	comando = scanner.nextInt();
+        	Sindicate sindicate = new Sindicate();
+            Employee employee = new Employee();
             switch(comando) {
                 case 1:
-                    System.out.println("Estou entrando em 1");
-                    Employee employee = new Employee(1000);
+                    System.out.println("Adição de um empregado");
                     employee.add();
                     break;
+                case 2:
+                	System.out.println("Remoção de um empregado");
+                	employee.removeEmployee();
+                	
+                	break;
+                case 3:
+                	System.out.println("Lançar um cartão de ponto");
+                	employee.postTimeCard();
+                	break;
+                case 4:
+                	System.out.println("Lançar uma venda!");
+                	employee.postSale();
+                	break;
+                case 5:
+                	System.out.println("Lançar uma taxa de serviço!");
+                	//employee.postSale();
+                	break;
+                case 6: 
+                	System.out.println("Alterar detalhes de um empregado!");
+                	System.out.println("Esses dados são referentes a:");
+                	System.out.println("1 - Informações do empregado na EMPRESA");
+                	System.out.println("2 - Informações do empregado na SINDICATO");
+                	int option = scanner.nextInt();
+                	if(option == 1)
+                		employee.employeeChange();
+                	else if(option == 2)
+                		sindicate.changeMember();
             }
+            
 
             System.out.println("Informe um novo comando, digite 11 para sair ou 0 para mostrar a lista de comandos.");
-            comando = scanner.nextInt();
+            //int newcomando = scanner.nextInt();
+            //comando = newcomando;
         } while(comando != 11);
-
         scanner.close();
+        
+        System.out.println("Você saiu do sistema. Até breve!");
+
+        
     }
 }
 
