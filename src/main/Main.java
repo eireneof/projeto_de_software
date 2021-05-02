@@ -36,11 +36,11 @@ public class Main {
             switch(comando) {
                 case 1:
                     System.out.println("Adição de um empregado");
-                    employee.add();
+                    employee.add(); //okay
                     break;
                 case 2:
                 	System.out.println("Remoção de um empregado");
-                	employee.removeEmployee();
+                	employee.removeEmployee(); //okay
                 	
                 	break;
                 case 3:
@@ -71,7 +71,7 @@ public class Main {
                 case 8:
                 	System.out.println("Undo/Redo!");
                 	System.out.println("Das ações de 1 - 7 qual será mudada?");
-                	option = scanner.nextInt();
+                	/*option = scanner.nextInt();
                 	if(option == 1) {
                 		
                 	} else if(option == 2) {
@@ -86,7 +86,7 @@ public class Main {
                 		
                 	} else {
                 		System.out.println("Opção inválida!");
-                	}
+                	} */
                 	break;
             }
             

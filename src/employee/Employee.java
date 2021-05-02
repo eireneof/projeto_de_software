@@ -13,7 +13,7 @@ public class Employee {
     private int id;
     private String paymentMethod;
     //private static Employee employeeArray[];
-    private ArrayList<Employee> listEmployees = new ArrayList<Employee>();
+    private static ArrayList<Employee> listEmployees = new ArrayList<Employee>();
     private int sindicate;
 
     /*public Employee(int numberOfEmployees) {
@@ -150,7 +150,9 @@ public class Employee {
     	
     	Employee nullEmployee = null;
     	for(Employee employee : listEmployees){
+    		//System.out.println("Passei por: " + employee.getName());
             if(employee.getId() == id){
+            	//System.out.println("Quem será removido: " + employee.getName());
             	nullEmployee = employee;
             }
         }
@@ -159,7 +161,7 @@ public class Employee {
     	
     	System.out.println("Rol atual de empregados: ");
         for (Employee activesEmployees : listEmployees) {
-            System.out.println(activesEmployees.getName());
+            System.out.println("( " + activesEmployees.getId() + " ) - " + activesEmployees.getName());
         }
     } 
     

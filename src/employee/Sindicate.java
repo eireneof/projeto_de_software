@@ -11,7 +11,7 @@ public class Sindicate {
 	private int sindicateId;
 	private double feeMonthly;
 	private double feeService;
-	private ArrayList<Sindicate> listSindicate = new ArrayList<Sindicate>();
+	private static ArrayList<Sindicate> listSindicate = new ArrayList<Sindicate>();
 
 	public Sindicate(String name, int employeeId, int sindicateId, double feeMonthly, double feeService) {
 		this.setName(name);
