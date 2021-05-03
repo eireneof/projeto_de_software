@@ -13,7 +13,6 @@ public class Sale {
         this.setValue(value);
         this.setItem(item);
         this.setEmployeeId(employeeId);
-        //this.id = id;
 	}
 	
     public String showSale(Sale sale) {

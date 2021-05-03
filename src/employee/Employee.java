@@ -12,14 +12,9 @@ public class Employee {
     private String adress;  
     private int id;
     private String paymentMethod;
-    //private static Employee employeeArray[];
     private static ArrayList<Employee> listEmployees = new ArrayList<Employee>();
     private int sindicate;
 
-    /*public Employee(int numberOfEmployees) {
-        Employee.employeeArray = new Employee[numberOfEmployees];
-        
-    }*/
     
     public String getAdress(){
         return adress;
@@ -87,7 +82,7 @@ public class Employee {
     }
 
     public void add() {
-        Scanner in = new Scanner(System.in); //sysin = pegar do terminal
+        Scanner in = new Scanner(System.in); 
 
         System.out.println("Digite o nome do empregado:");
         String name = in.nextLine();

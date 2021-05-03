@@ -71,8 +71,4 @@ public class Hourly extends Employee {
 	public void setHourSalary(double hourSalary) {
 		this.hourSalary = hourSalary;
 	}
-    
-    //quanto ele vai receber
-    //zerar o cartão de ponto 
-    //update salário horário
 }
