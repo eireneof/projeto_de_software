@@ -1,7 +1,7 @@
 # Projeto de Folha de Pagamento
 <br>
 
-> EM DESENVOLVIMENTO :mechanic: 
+> Obs: foram implementadas as funcionalidades 1 - 6 :mechanic:
 
 <br>
 
